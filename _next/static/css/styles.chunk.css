@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+.header_3WU5y {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  margin-bottom: 80px;
+}
+
+  @media (min-width: 520px) {.header_3WU5y {
+    align-items: flex-start;
+    height: auto;
+}
+  }
+
+  @media (min-width: 900px) {.header_3WU5y {
+    padding: 200px 0;
+}
+  }
+
+.headerText_19bTJ {
+  margin-bottom: 36px;
+}
+
+@media (min-width: 520px) {
+
+.subline_M0OWM {
+    font-size: 28px
+}
+  }
+
+.headline_yfYnc {
+  font-family: var(--font-headline);
+  line-height: 1.2;
+}
+
+.decoLine_3Myo5 {
+  width: 80px;
+  margin-top: 16px;
+  display: block;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+}
+
+h2.headline_yfYnc {
+  font-size: 30px;
+}
+
+/* Levels */
+
+.levelOne_xiGw0 {
+  font-size: 46px;
+}
+
+@media (min-width: 520px) {
+
+.levelOne_xiGw0 {
+    font-size: 66px
+}
+  }
+
+.levelTwo_2DA24 {
+}
+.levelThree_1ubKa {
+}
+.levelFour_2tYEm {
+}
+.levelFive_3XonR {
+}
+
+.button_7lCAZ {
+  background: var(--grey);
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--font-headline);
+  height: 56px;
+  padding: 0 36px;
+  display: flex;
+  font-size: inherit;
+  align-items: center;
+
+  border: 2px solid white;
+  justify-content: center;
+}
+
+  .button_7lCAZ:focus {
+    background: white;
+    color: var(--starry-sky);
+    outline: none;
+  }
+
+.list_1XxgW {
+  padding: 40px 0;
+  list-style-type: none;
+}
+
+.item_2OALd {
+  font-family: var(--font-headline);
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 520px) {
+
+.item_2OALd {
+    margin-bottom: 80px;
+    font-size: 28px
+}
+  }
+
+.number_1ILj3 {
+  color: var(--blue);
+  font-family: 'Fira Sans';
+  font-weight: bold;
+  position: absolute;
+  z-index: -1;
+  font-size: 120px;
+  left: 0;
+}
+
+.paragraph_1g1ts {
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.margin_3c-w2 {
+  margin-bottom: 120px;
+}
+
+.footer_1zBD1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+
+  @media (min-width: 600px) {.footer_1zBD1 {
+    flex-direction: row
+}
+  }
+.footerlink_1Acp8 {
+  color: inherit;
+  margin: 15px 0;
+  text-decoration: none;
+  border-bottom: 4px solid var(--blue);
+  transition: border-color 170ms ease-in-out;
+}
+@media (min-width: 600px) {
+.footerlink_1Acp8 {
+    margin: 0 16px 0 0
+}
+  }
+.footerlink_1Acp8:focus {
+    outline: none;
+    border-color: var(--blueLight);
+  }
+
+.component_2miSN {
+  outline: 2px solid fuchsia;
+}
+
+.headline_SiuZQ {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.list_2b0Bc {
+  padding: 0;
+  list-style-type: none;
+}
+
+.item_8d03A {
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+:root {
+  --font-headline: 'Playfair Display';
+  --starry-sky: rgba(36, 38, 43, 1);
+  --petrol: rgba(42, 56, 62, 1);
+  --grey: rgba(87, 90, 99, 1);
+  --blue: rgba(45, 61, 106, 1);
+  --blueLight: rgba(115, 151, 255, 1);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Fira Sans';
+  background-color: var(--starry-sky);
+  background-image: url('/static/planets.png');
+  background-attachment: fixed;
+  color: white;
+}
+
+.frame_3YJew {
+  padding: 16px;
+}
+
+@media (min-width: 800px) {
+
+.frame_3YJew {
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto
+}
+  }
+
+.logo_2XlO2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+
+.logo_2XlO2 {
+    font-size: 24px
+}
+  }
+
+.logoContainer_3Qdve {
+  display: flex;
+  align-items: center;
+}
+.rocket_2deeg {
+  margin-right: 16px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  height: 50px;
+}
+@media (max-width: 800px) {
+.rocket_2deeg {
+    display: none
+}
+  }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
