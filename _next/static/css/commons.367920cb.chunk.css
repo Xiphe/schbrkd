@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+.yfYnc {
+  font-family: var(--font-headline);
+  line-height: 1.2;
+}
+
+._3Myo5 {
+  width: 80px;
+  margin-top: 16px;
+  display: block;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+}
+
+h2.yfYnc {
+  font-size: 30px;
+}
+
+/* Levels */
+
+.xiGw0 {
+  font-size: 46px;
+}
+
+@media (min-width: 520px) {
+
+.xiGw0 {
+    font-size: 66px
+}
+  }
+
+._2DA24 {
+}
+._1ubKa {
+}
+._2tYEm {
+}
+._3XonR {
+}
+
+:root {
+  --font-headline: 'Playfair Display';
+  --starry-sky: rgba(36, 38, 43, 1);
+  --petrol: rgba(42, 56, 62, 1);
+  --grey: rgba(87, 90, 99, 1);
+  --blue: rgba(45, 61, 106, 1);
+  --blueLight: rgba(115, 151, 255, 1);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Fira Sans';
+  background-color: var(--starry-sky);
+  background-image: url('/static/planets.png');
+  background-attachment: fixed;
+  color: white;
+}
+
+._3YJew {
+  padding: 16px;
+}
+
+@media (min-width: 800px) {
+
+._3YJew {
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto
+}
+  }
+
+._2XlO2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+
+._2XlO2 {
+    font-size: 24px
+}
+  }
+
+._3Qdve {
+  display: flex;
+  align-items: center;
+}
+._2deeg {
+  margin-right: 16px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  height: 50px;
+}
+@media (max-width: 800px) {
+._2deeg {
+    display: none
+}
+  }
+
