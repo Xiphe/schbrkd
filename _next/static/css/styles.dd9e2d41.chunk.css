@@ -40,7 +40,7 @@
   padding: 80px 0;
   grid-gap: 20px;
 }
-  @media (--small-screen) {._1c7V7 {
+  @media (max-width: 520px) {._1c7V7 {
     grid-template-columns: 1fr
 }
   }
@@ -201,7 +201,7 @@
   align-items: center;
 }
 
-@media (--small-screen) {
+@media (max-width: 520px) {
 
 ._3aWSv {
     flex-direction: column;
@@ -231,7 +231,7 @@
   width: 160px;
 }
 
-@media (--small-screen) {
+@media (max-width: 520px) {
 
 .DAOLC {
     margin-bottom: 28px

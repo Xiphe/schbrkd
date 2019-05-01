@@ -6266,7 +6266,7 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 11:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx ***!
   \**************************************************************************************************************************************/
@@ -6289,5 +6289,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[11,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

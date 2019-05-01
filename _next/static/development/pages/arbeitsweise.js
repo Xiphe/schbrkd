@@ -5898,7 +5898,7 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 17:
+/***/ 0:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Farbeitsweise&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Farbeitsweise.tsx ***!
   \*********************************************************************************************************************************************************/
@@ -5921,5 +5921,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[17,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=arbeitsweise.js.map
