@@ -1,83 +1,3 @@
-.yfYnc {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-family: var(--font-headline);
-  line-height: 1;
-
-  text-shadow: 0.1 ex 0.1 ex 0px black;
-  color: var(--navy);
-  transition: text-shadow 120ms ease-in-out;
-  text-shadow: 4px 4px 0 rgba(154, 154, 154, 0.46),
-    8px 8px 0 rgba(58, 140, 227, 0.15);
-  margin: 0;
-}
-  .yfYnc:hover {
-    text-shadow: 8px 8px 0 rgba(154, 154, 154, 0.46),
-      16px 16px 0 rgba(58, 140, 227, 0.15);
-  }
-
-/* Levels */
-
-.xiGw0 {
-  margin-bottom: 18px;
-  font-size: 107px;
-}
-
-@media (max-width: 900px) {
-
-.xiGw0 {
-    font-size: 80px
-}
-  }
-
-@media (--small-screen) {
-    .xiGw0 {
-      font-size: 11vw;
-    }
-  }
-
-._2DA24 {
-  font-family: Fieldwork-Geo-Demibold;
-  font-size: 38px;
-  color: #083a48;
-  letter-spacing: 0;
-
-  text-shadow: 2px 2px 0 rgba(154, 154, 154, 0.46),
-    4px 4px 0 rgba(58, 140, 227, 0.15);
-  margin: 0;
-}
-
-._2DA24:hover {
-    text-shadow: 4px 4px 0 rgba(154, 154, 154, 0.46),
-      8px 8px 0 rgba(58, 140, 227, 0.15);
-  }
-
-._1ubKa {
-  text-transform: initial;
-  text-shadow: initial;
-  font-size: 28px;
-  font-family: Fieldwork-Geo-Light;
-  font-weight: 300;
-}
-
-._1ubKa:hover {
-    text-shadow: initial;
-  }
-
-._2tYEm {
-  text-transform: initial;
-  text-shadow: initial;
-  font-size: 22px;
-  font-family: Fieldwork-Geo-Light;
-  font-weight: 300;
-}
-
-._2tYEm:hover {
-    text-shadow: initial;
-  }
-._3XonR {
-}
-
 :root {
   --dark: #343637;
   --font-headline: 'fieldwork';
@@ -180,6 +100,86 @@ body {
       flex-direction: row;
     }
   }
+
+.yfYnc {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: var(--font-headline);
+  line-height: 1;
+
+  text-shadow: 0.1 ex 0.1 ex 0px black;
+  color: var(--navy);
+  transition: text-shadow 120ms ease-in-out;
+  text-shadow: 4px 4px 0 rgba(154, 154, 154, 0.46),
+    8px 8px 0 rgba(58, 140, 227, 0.15);
+  margin: 0;
+}
+  .yfYnc:hover {
+    text-shadow: 8px 8px 0 rgba(154, 154, 154, 0.46),
+      16px 16px 0 rgba(58, 140, 227, 0.15);
+  }
+
+/* Levels */
+
+.xiGw0 {
+  margin-bottom: 18px;
+  font-size: 107px;
+}
+
+@media (max-width: 900px) {
+
+.xiGw0 {
+    font-size: 80px
+}
+  }
+
+@media (--small-screen) {
+    .xiGw0 {
+      font-size: 11vw;
+    }
+  }
+
+._2DA24 {
+  font-family: Fieldwork-Geo-Demibold;
+  font-size: 38px;
+  color: #083a48;
+  letter-spacing: 0;
+
+  text-shadow: 2px 2px 0 rgba(154, 154, 154, 0.46),
+    4px 4px 0 rgba(58, 140, 227, 0.15);
+  margin: 0;
+}
+
+._2DA24:hover {
+    text-shadow: 4px 4px 0 rgba(154, 154, 154, 0.46),
+      8px 8px 0 rgba(58, 140, 227, 0.15);
+  }
+
+._1ubKa {
+  text-transform: initial;
+  text-shadow: initial;
+  font-size: 28px;
+  font-family: Fieldwork-Geo-Light;
+  font-weight: 300;
+}
+
+._1ubKa:hover {
+    text-shadow: initial;
+  }
+
+._2tYEm {
+  text-transform: initial;
+  text-shadow: initial;
+  font-size: 22px;
+  font-family: Fieldwork-Geo-Light;
+  font-weight: 300;
+}
+
+._2tYEm:hover {
+    text-shadow: initial;
+  }
+._3XonR {
+}
 
 ._33ZOK {
   font-weight: bold;
