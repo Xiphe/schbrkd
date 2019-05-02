@@ -133,7 +133,7 @@ body {
   margin-bottom: 16px;
 }
 
-@media (max-width: 520px) {
+@media (--small-screen) {
     .pages-index_mission {
       font-size: 24px;
     }
