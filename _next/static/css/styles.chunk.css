@@ -101,47 +101,6 @@ body {
     }
   }
 
-.components-link-link_link {
-  font-weight: bold;
-  color: var(--navy);
-  border-bottom: 4px solid var(--teal);
-  text-decoration: none;
-}
-
-.pages-index_header {
-
-  margin-bottom: 80px;
-}
-  @media (min-width: 520px) {
-    .pages-index_header {
-      height: auto;
-    }
-  }
-
-.pages-index_headerText {
-  margin-bottom: 36px;
-}
-
-.pages-index_team {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-}
-
-.pages-index_mission {
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-@media (--small-screen) {
-    .pages-index_mission {
-      font-size: 24px;
-    }
-  }
-.pages-index_teamPicture {
-  width: 100%;
-}
-
 .components-headline-headline_headline {
   text-transform: uppercase;
   font-weight: 900;
@@ -222,15 +181,51 @@ body {
 .components-headline-headline_levelFive {
 }
 
-.components-howwework-howwework_item {
-  padding: 20px 0;
-  margin-bottom: 20px;
+.components-link-link_link {
+  font-weight: bold;
+  color: var(--navy);
+  border-bottom: 4px solid var(--teal);
+  text-decoration: none;
+}
+
+.pages-index_header {
+
+  margin-bottom: 80px;
+}
+  @media (min-width: 520px) {
+    .pages-index_header {
+      height: auto;
+    }
+  }
+
+.pages-index_headerText {
+  margin-bottom: 36px;
+}
+
+.pages-index_team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.pages-index_mission {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+@media (--small-screen) {
+    .pages-index_mission {
+      font-size: 24px;
+    }
+  }
+.pages-index_teamPicture {
+  width: 100%;
 }
 
 .components-tools-tools_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 80px 0;
+  padding: 40px 0 80px 0;
   grid-gap: 20px;
 }
   @media (max-width: 520px) {
@@ -325,16 +320,6 @@ body {
     box-shadow: 8px 8px 0 0 rgba(131, 152, 153, 0.12),
       4px 4px 0 0 rgba(214, 225, 235, 0.56);
   }
-
-.components-contactaction-contactaction_wrapper {
-  padding: 50px 0;
-}
-
-.components-contactaction-contactaction_headline {
-  text-transform: initial;
-  font-size: 48px;
-  margin-bottom: 28px;
-}
 
 .components-richtext-richtext_richtext {
   position: relative;

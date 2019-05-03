@@ -533,12 +533,13 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/paragraph
 function Paragraph(_ref) {
   var _ref$children = _ref.children,
       children = _ref$children === void 0 ? '' : _ref$children,
-      margin = _ref.margin;
+      margin = _ref.margin,
+      className = _ref.className;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_paragraph_css__WEBPACK_IMPORTED_MODULE_1___default.a.paragraph, margin && _paragraph_css__WEBPACK_IMPORTED_MODULE_1___default.a.margin),
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_paragraph_css__WEBPACK_IMPORTED_MODULE_1___default.a.paragraph, margin && _paragraph_css__WEBPACK_IMPORTED_MODULE_1___default.a.margin, className),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, children.split('\n').map(function (item, key) {
@@ -546,13 +547,13 @@ function Paragraph(_ref) {
       key: key,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 21
       },
       __self: this
     }, item, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 23
       },
       __self: this
     }));
@@ -6174,7 +6175,7 @@ function Index(p) {
       lineNumber: 51
     },
     __self: this
-  }, "Werkzeuge"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tools_tools__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Qualit\xE4ten"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tools_tools__WEBPACK_IMPORTED_MODULE_5__["default"], {
     data: p.tools,
     __source: {
       fileName: _jsxFileName,
@@ -6267,7 +6268,7 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx ***!
   \**************************************************************************************************************************************/
@@ -6290,5 +6291,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
