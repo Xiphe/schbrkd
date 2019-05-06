@@ -334,7 +334,7 @@ function getAnimationDuration(max) {
 }
 
 function opacity(number) {
-  return number / 100 - 0.6 + 0.1;
+  return number * 0.01 - 0.25;
 }
 
 var AnimatedBackground =
