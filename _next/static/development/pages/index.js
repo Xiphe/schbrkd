@@ -335,7 +335,7 @@ function getAnimationDuration(max) {
 
 function opacity(number) {
   var min = 0.1;
-  var maxAmount = 30 / 100;
+  var maxAmount = 25 / 100;
   var amount = (number / 100 * (maxAmount - min) + min).toFixed(2);
   console.log(amount);
   return amount;
