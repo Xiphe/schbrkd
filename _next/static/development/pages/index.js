@@ -334,7 +334,11 @@ function getAnimationDuration(max) {
 }
 
 function opacity(number) {
-  return number * 0.01 - 0.25;
+  var min = 0.1;
+  var maxAmount = 30 / 100;
+  var amount = (number / 100 * (maxAmount - min) + min).toFixed(2);
+  console.log(amount);
+  return amount;
 }
 
 var AnimatedBackground =
@@ -377,14 +381,14 @@ function (_React$Component) {
         className: _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.bgWrap,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 84
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.bg,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 85
         },
         __self: this
       }, Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(Array(length).keys()).map(function (i) {
@@ -399,7 +403,7 @@ function (_React$Component) {
           size: getRandomInt(3),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 83
+            lineNumber: 87
           },
           __self: this
         });
@@ -6253,11 +6257,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_richtext_richtext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/richtext/richtext */ "./components/richtext/richtext.tsx");
 /* harmony import */ var _components_team_team__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/team/team */ "./components/team/team.tsx");
 /* harmony import */ var _components_buzzwords_buzzwords__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/buzzwords/buzzwords */ "./components/buzzwords/buzzwords.tsx");
-/* harmony import */ var _components_link_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/link/link */ "./components/link/link.tsx");
-/* harmony import */ var _components_subline_subline__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/subline/subline */ "./components/subline/subline.tsx");
-/* harmony import */ var _components_list_list__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/list/list */ "./components/list/list.tsx");
+/* harmony import */ var _components_subline_subline__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/subline/subline */ "./components/subline/subline.tsx");
+/* harmony import */ var _components_list_list__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/list/list */ "./components/list/list.tsx");
 var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/pages/index.tsx";
-
 
 
 
@@ -6278,7 +6280,7 @@ var teamData = [{
   description: 'Seit 9 Jahren Erfahrung mit der Benutzergerechten gestaltung von Oberflächen. Von UX bis zur technischen Umsetzung.'
 }, {
   img: '/static/hannes.jpg',
-  role: 'Konzeption',
+  role: 'Entwicklung',
   name: 'Hannes Diercks',
   description: 'Seit 10 Jahren in der Entwicklung. Hat Erfahrung von Software Architektur bis Npm Package Publishing'
 }];
@@ -6319,7 +6321,7 @@ function Index(p) {
       lineNumber: 61
     },
     __self: this
-  }, p.headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_subline_subline__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, p.headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_subline_subline__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
@@ -6339,14 +6341,7 @@ function Index(p) {
       lineNumber: 69
     },
     __self: this
-  }, p.missionText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_link_link__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    href: "/arbeitsweise",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: this
-  }, "Erz\xE4hl mir mehr"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, p.missionText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: 3,
     __source: {
       fileName: _jsxFileName,
@@ -6416,7 +6411,7 @@ function Index(p) {
       lineNumber: 81
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_list_list__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_list_list__WEBPACK_IMPORTED_MODULE_12__["default"], {
     headline: "Referenzen",
     data: p.references,
     __source: {
