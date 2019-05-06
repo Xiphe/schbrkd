@@ -243,7 +243,7 @@ body {
   }
 
 .components-headline-headline_levelTwo {
-  font-family: Fieldwork-Geo-Demibold;
+  font-weight: 600;
   font-size: 38px;
   color: #083a48;
   letter-spacing: 0;
@@ -262,7 +262,6 @@ body {
   text-transform: initial;
   text-shadow: initial;
   font-size: 28px;
-  font-family: Fieldwork-Geo-Light;
   font-weight: 300;
 }
 
