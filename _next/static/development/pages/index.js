@@ -306,8 +306,8 @@ function Ball(_ref) {
       duration = _ref.duration,
       direction = _ref.direction;
   var style = {
-    top: "".concat(positionY, "%"),
-    left: "".concat(positionX, "%"),
+    top: "".concat(positionY, "px"),
+    left: "".concat(positionX, "px"),
     opacity: opacity,
     animationDuration: "".concat(duration, "s"),
     animationDirection: directions[direction]
@@ -393,8 +393,8 @@ function (_React$Component) {
           direction: getRandomInt(2),
           duration: getAnimationDuration(200),
           opacity: opacity(getRandomInt(100)),
-          positionX: getRandomInt(_this2.state.width / 10),
-          positionY: getRandomInt(_this2.state.height / 10),
+          positionX: getRandomInt(_this2.state.width),
+          positionY: getRandomInt(_this2.state.height),
           color: getRandomInt(3),
           size: getRandomInt(3),
           __source: {
