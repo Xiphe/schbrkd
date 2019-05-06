@@ -191,6 +191,229 @@ function Buzzwords(_ref) {
 
 /***/ }),
 
+/***/ "./components/featurelist/featurelist.tsx":
+/*!************************************************!*\
+  !*** ./components/featurelist/featurelist.tsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FeatureList; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _featurelist_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./featurelist.css */ "./components/featurelist/featurelist.css");
+/* harmony import */ var _featurelist_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_featurelist_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
+/* harmony import */ var _paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../paragraph/paragraph */ "./components/paragraph/paragraph.tsx");
+var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/featurelist/featurelist.tsx";
+
+
+
+
+
+function Tool(_ref) {
+  var headline = _ref.headline,
+      children = _ref.children;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    level: 3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, children));
+}
+
+function FeatureList(_ref2) {
+  var data = _ref2.data;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _featurelist_css__WEBPACK_IMPORTED_MODULE_1___default.a.wrapper,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, data.map(function (i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Tool, {
+      key: i.headline,
+      headline: i.headline,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, i.text);
+  }));
+}
+
+/***/ }),
+
+/***/ "./components/frame/background.tsx":
+/*!*****************************************!*\
+  !*** ./components/frame/background.tsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _frame_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./frame.css */ "./components/frame/frame.css");
+/* harmony import */ var _frame_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_frame_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/frame/background.tsx";
+
+
+
+var sizeClasses = [_frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.small, _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.medium, _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.big];
+var colorClasses = [_frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.green, _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.orange, _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.teal];
+var directions = ['normal', 'reverse'];
+
+function Ball(_ref) {
+  var color = _ref.color,
+      size = _ref.size,
+      positionX = _ref.positionX,
+      positionY = _ref.positionY,
+      opacity = _ref.opacity,
+      duration = _ref.duration,
+      direction = _ref.direction;
+  var style = {
+    top: "".concat(positionY, "%"),
+    left: "".concat(positionX, "%"),
+    opacity: opacity,
+    animationDuration: "".concat(duration, "s"),
+    animationDirection: directions[direction]
+  };
+  return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+    style: style,
+    className: classnames__WEBPACK_IMPORTED_MODULE_8___default()(_frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.ball, sizeClasses[size], colorClasses[color]),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  });
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+function getAnimationDuration(max) {
+  var min = 40;
+  var maxAmount = Math.floor(max);
+  return Math.floor(Math.random() * (maxAmount - min)) + min;
+}
+
+function opacity(number) {
+  return number / 100 - 0.6 + 0.1;
+}
+
+var AnimatedBackground =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(AnimatedBackground, _React$Component);
+
+  function AnimatedBackground(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, AnimatedBackground);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(AnimatedBackground).call(this, props));
+    _this.state = {
+      width: 0,
+      height: 0
+    };
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(AnimatedBackground, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.setState({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      if (!this.state.width && !this.state.height) {
+        return null;
+      }
+
+      var length = Math.ceil(this.state.width / 7);
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.bgWrap,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.bg,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(Array(length).keys()).map(function (i) {
+        return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Ball, {
+          key: i,
+          direction: getRandomInt(2),
+          duration: getAnimationDuration(200),
+          opacity: opacity(getRandomInt(100)),
+          positionX: getRandomInt(_this2.state.width / 10),
+          positionY: getRandomInt(_this2.state.height / 10),
+          color: getRandomInt(3),
+          size: getRandomInt(3),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 83
+          },
+          __self: this
+        });
+      })));
+    }
+  }]);
+
+  return AnimatedBackground;
+}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (AnimatedBackground);
+
+/***/ }),
+
 /***/ "./components/frame/frame.tsx":
 /*!************************************!*\
   !*** ./components/frame/frame.tsx ***!
@@ -211,7 +434,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _sections_footer_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../sections/footer/footer */ "./sections/footer/footer.tsx");
+/* harmony import */ var _background__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./background */ "./components/frame/background.tsx");
 var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/frame/frame.tsx";
+
 
 
 
@@ -224,19 +449,19 @@ function Frame(p) {
     className: classnames__WEBPACK_IMPORTED_MODULE_4___default()(_frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.frame, p.singlePage && _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.singlePage),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -244,7 +469,7 @@ function Frame(p) {
     href: "https://use.typekit.net/uaf4juj.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -252,7 +477,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -260,7 +485,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -268,7 +493,7 @@ function Frame(p) {
     content: p.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -276,7 +501,7 @@ function Frame(p) {
     content: "/static/open-graph.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -284,7 +509,7 @@ function Frame(p) {
     content: "1200",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -292,7 +517,7 @@ function Frame(p) {
     content: "630",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -300,7 +525,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].baseUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -308,7 +533,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -316,7 +541,7 @@ function Frame(p) {
     content: "photo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -324,7 +549,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].twitterName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -332,7 +557,7 @@ function Frame(p) {
     content: "750",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -340,7 +565,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -348,7 +573,7 @@ function Frame(p) {
     content: "560",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -356,7 +581,7 @@ function Frame(p) {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -365,13 +590,19 @@ function Frame(p) {
     alt: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   })), p.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_footer_footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_background__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
     },
     __self: this
   }));
@@ -401,20 +632,35 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/headline/
 
 var LEVEL_CLASSES = [_headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.levelOne, _headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.levelTwo, _headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.levelThree, _headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.levelFour, _headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.levelFive];
 function Headline(_ref) {
-  var className = _ref.className,
-      noborder = _ref.noborder,
+  var isRichText = _ref.isRichText,
+      className = _ref.className,
       children = _ref.children,
       _ref$level = _ref.level,
       level = _ref$level === void 0 ? 2 : _ref$level;
   var Tag = "h".concat(level);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Tag, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(LEVEL_CLASSES[level - 1], _headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.headline, className),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, children);
+
+  if (!isRichText) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Tag, {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(LEVEL_CLASSES[level - 1], _headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.headline, className),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, children);
+  } else {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Tag, {
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(LEVEL_CLASSES[level - 1], _headline_css__WEBPACK_IMPORTED_MODULE_1___default.a.headline, className),
+      dangerouslySetInnerHTML: {
+        __html: children
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: this
+    });
+  }
 }
 
 /***/ }),
@@ -683,9 +929,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _team_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./team.css */ "./components/team/team.css");
 /* harmony import */ var _team_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_team_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config */ "./config.ts");
 var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/team/team.tsx";
-
 
 
 
@@ -756,7 +1000,7 @@ function Team(_ref2) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TeamMember, {
       role: i.role,
       key: i.name,
-      img: "".concat(_config__WEBPACK_IMPORTED_MODULE_3__["default"].contentHubUrl).concat(i.img._src),
+      img: "".concat(i.img),
       name: i.name,
       __source: {
         fileName: _jsxFileName,
@@ -764,77 +1008,6 @@ function Team(_ref2) {
       },
       __self: this
     }, i.description);
-  }));
-}
-
-/***/ }),
-
-/***/ "./components/tools/tools.tsx":
-/*!************************************!*\
-  !*** ./components/tools/tools.tsx ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tools; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _tools_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tools.css */ "./components/tools/tools.css");
-/* harmony import */ var _tools_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tools_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-/* harmony import */ var _paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../paragraph/paragraph */ "./components/paragraph/paragraph.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/tools/tools.tsx";
-
-
-
-
-
-function Tool(_ref) {
-  var headline = _ref.headline,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    level: 3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, children));
-}
-
-function Tools(_ref2) {
-  var data = _ref2.data;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _tools_css__WEBPACK_IMPORTED_MODULE_1___default.a.wrapper,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, data.map(function (i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Tool, {
-      key: i.headline,
-      headline: i.headline,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, i.text);
   }));
 }
 
@@ -6074,7 +6247,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./pages/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_headline_headline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/headline/headline */ "./components/headline/headline.tsx");
-/* harmony import */ var _components_tools_tools__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/tools/tools */ "./components/tools/tools.tsx");
+/* harmony import */ var _components_featurelist_featurelist__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/featurelist/featurelist */ "./components/featurelist/featurelist.tsx");
 /* harmony import */ var _components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/spacer/spacer */ "./components/spacer/spacer.tsx");
 /* harmony import */ var _components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/buttongroup/buttongroup */ "./components/buttongroup/buttongroup.tsx");
 /* harmony import */ var _components_richtext_richtext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/richtext/richtext */ "./components/richtext/richtext.tsx");
@@ -6098,109 +6271,149 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/pages/index.tsx";
 
 
 
+var teamData = [{
+  img: '/static/lasse.jpg',
+  role: 'Konzeption',
+  name: 'Lasse Diercks',
+  description: 'niceDude'
+}, {
+  img: '/static/hannes.jpg',
+  role: 'Konzeption',
+  name: 'Hannes Diercks',
+  description: 'niceDude 2'
+}];
 function Index(p) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_frame_frame__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: p.pageTitle,
     description: p.pageDescription,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.header,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.headerText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
     level: 1,
+    isRichText: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 59
     },
     __self: this
   }, p.headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_subline_subline__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 62
     },
     __self: this
   }, p.subline)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
     data: p.headerbuttons,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 64
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.mission,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 67
     },
     __self: this
   }, p.missionText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_link_link__WEBPACK_IMPORTED_MODULE_11__["default"], {
     href: "/arbeitsweise",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 68
     },
     __self: this
   }, "Erz\xE4hl mir mehr"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     size: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 69
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
     level: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 70
     },
     __self: this
-  }, "Qualit\xE4ten"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tools_tools__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Warum Itertativ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_featurelist_featurelist__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    data: p.whyIterative,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.mission,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, p.howText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    size: 3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    level: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, "Qualit\xE4ten"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_featurelist_featurelist__WEBPACK_IMPORTED_MODULE_5__["default"], {
     data: p.tools,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 75
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buzzwords_buzzwords__WEBPACK_IMPORTED_MODULE_10__["default"], {
     headline: "Mehr buzz?",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 76
     },
     __self: this
   }, p.buzzwords), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
     level: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 77
     },
     __self: this
   }, "Team"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_team_team__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    data: p.team,
+    data: teamData,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 79
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_list_list__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -6208,7 +6421,7 @@ function Index(p) {
     data: p.references,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 80
     },
     __self: this
   })));
@@ -6268,7 +6481,7 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx ***!
   \**************************************************************************************************************************************/
@@ -6291,5 +6504,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
