@@ -337,7 +337,6 @@ function opacity(number) {
   var min = 0.1;
   var maxAmount = 25 / 100;
   var amount = (number / 100 * (maxAmount - min) + min).toFixed(2);
-  console.log(amount);
   return amount;
 }
 
@@ -381,14 +380,14 @@ function (_React$Component) {
         className: _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.bgWrap,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 83
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: _frame_css__WEBPACK_IMPORTED_MODULE_7___default.a.bg,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 84
         },
         __self: this
       }, Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(Array(length).keys()).map(function (i) {
@@ -403,7 +402,7 @@ function (_React$Component) {
           size: getRandomInt(3),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 87
+            lineNumber: 86
           },
           __self: this
         });
