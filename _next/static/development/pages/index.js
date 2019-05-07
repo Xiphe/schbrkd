@@ -470,9 +470,8 @@ function Frame(p) {
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "preload",
+    rel: "stylesheet",
     href: "https://use.typekit.net/uaf4juj.css",
-    as: "style",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -483,7 +482,7 @@ function Frame(p) {
     href: "/static/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -491,7 +490,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 29
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -499,7 +498,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 30
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -507,7 +506,7 @@ function Frame(p) {
     content: p.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 31
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -515,7 +514,7 @@ function Frame(p) {
     content: "/static/open-graph.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 32
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -523,7 +522,7 @@ function Frame(p) {
     content: "1200",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 33
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -531,7 +530,7 @@ function Frame(p) {
     content: "630",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -539,7 +538,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].baseUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 35
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -547,7 +546,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 36
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -555,7 +554,7 @@ function Frame(p) {
     content: "photo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -563,7 +562,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].twitterName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 38
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -571,7 +570,7 @@ function Frame(p) {
     content: "750",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 39
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -579,7 +578,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 40
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -587,7 +586,7 @@ function Frame(p) {
     content: "560",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 41
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -595,32 +594,32 @@ function Frame(p) {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.logo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_logo__WEBPACK_IMPORTED_MODULE_7__["Logo"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 45
     },
     __self: this
   }))), p.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_footer_footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 49
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_background__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 50
     },
     __self: this
   }));
@@ -806,7 +805,7 @@ var Logo = function Logo() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M0 170l120.3 116.3c69.9 69.7 182.1 71.9 250 4.2 31.1-31 49.6-78.9 49-120.5H0z",
     fillRule: "evenodd",
-    "clip-Rule": "evenodd",
+    clipRule: "evenodd",
     fill: "#D44739",
     __source: {
       fileName: _jsxFileName,
@@ -816,7 +815,7 @@ var Logo = function Logo() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M339.9 170c.5 23.7-8 51.7-23.6 69.9-36.7 42.6-98.7 42.7-137.4 1L113.3 170h226.6z",
     fillRule: "evenodd",
-    "clip-Rule": "evenodd",
+    clipRule: "evenodd",
     fill: "#F7BC4B",
     __source: {
       fileName: _jsxFileName,
@@ -826,7 +825,7 @@ var Logo = function Logo() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M0 170L120.3 53.7c69.9-69.7 182.1-71.9 250-4.2 31.1 31 49.6 78.9 49 120.5H0z",
     fillRule: "evenodd",
-    "clip-Rule": "evenodd",
+    clipRule: "evenodd",
     fill: "#ED7562",
     __source: {
       fileName: _jsxFileName,
@@ -836,7 +835,7 @@ var Logo = function Logo() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M339.9 170c.5-23.7-8-51.7-23.6-69.9-36.7-42.6-98.7-42.7-137.4-1L113.3 170h226.6z",
     fillRule: "evenodd",
-    "clip-Rule": "evenodd",
+    clipRule: "evenodd",
     fill: "#F5CA54",
     __source: {
       fileName: _jsxFileName,
