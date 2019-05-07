@@ -47,7 +47,7 @@ body {
 
 .components-frame-frame_frame {
     padding: 200px 32px;
-    max-width: 800px;
+    max-width: 880px;
     margin: 0 auto
 }
   }
@@ -329,15 +329,6 @@ body {
   height: 200px;
 }
 
-.components-howwework-howwework_item {
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
-
-.components-howwework-howwework_itemText {
-  font-size: 22px;
-}
-
 .components-buttongroup-buttongroup_component {
   display: grid;
   grid-template-columns: auto auto;
@@ -506,16 +497,6 @@ body {
   line-height: 1.2;
 }
 
-.components-contactaction-contactaction_wrapper {
-  padding: 50px 0;
-}
-
-.components-contactaction-contactaction_headline {
-  text-transform: initial;
-  font-size: 48px;
-  margin-bottom: 28px;
-}
-
 .components-subline-subline_subline {
   display: inline-block;
   font-weight: 300;
@@ -547,6 +528,15 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
 }
+
+.pages-datenschutz_datenHeadline {
+  font-size: 50px;
+}
+  @media (max-width: 600px) {
+    .pages-datenschutz_datenHeadline {
+      font-size: 6vw;
+    }
+  }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

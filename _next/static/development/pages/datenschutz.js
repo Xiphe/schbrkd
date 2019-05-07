@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/datenschutz.js"],{
 
 /***/ "../node_modules/classnames/index.js":
 /*!*******************************************!*\
@@ -59,206 +59,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	} else {}
 }());
 
-
-/***/ }),
-
-/***/ "./components/button/button.tsx":
-/*!**************************************!*\
-  !*** ./components/button/button.tsx ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Button; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button.css */ "./components/button/button.css");
-/* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_button_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/button/button.tsx";
-
-
-
-function Button(_ref) {
-  var secondary = _ref.secondary,
-      children = _ref.children,
-      href = _ref.href;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: href,
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_button_css__WEBPACK_IMPORTED_MODULE_1___default.a.button, secondary && _button_css__WEBPACK_IMPORTED_MODULE_1___default.a.secondary),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, children);
-}
-
-/***/ }),
-
-/***/ "./components/buttongroup/buttongroup.tsx":
-/*!************************************************!*\
-  !*** ./components/buttongroup/buttongroup.tsx ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ButtonGroup; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _buttongroup_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttongroup.css */ "./components/buttongroup/buttongroup.css");
-/* harmony import */ var _buttongroup_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_buttongroup_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _button_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../button/button */ "./components/button/button.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/buttongroup/buttongroup.tsx";
-
-
-
-function ButtonGroup(_ref) {
-  var data = _ref.data;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _buttongroup_css__WEBPACK_IMPORTED_MODULE_1___default.a.component,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, data.map(function (i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_button_button__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      href: i.href,
-      key: i.label,
-      secondary: i.secondary,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, i.label);
-  }));
-}
-
-/***/ }),
-
-/***/ "./components/buzzwords/buzzwords.tsx":
-/*!********************************************!*\
-  !*** ./components/buzzwords/buzzwords.tsx ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Buzzwords; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _buzzwords_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buzzwords.css */ "./components/buzzwords/buzzwords.css");
-/* harmony import */ var _buzzwords_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_buzzwords_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/buzzwords/buzzwords.tsx";
-
-
-
-function Buzzwords(_ref) {
-  var headline = _ref.headline,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _buzzwords_css__WEBPACK_IMPORTED_MODULE_1___default.a.wrapper,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    level: 4,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: _buzzwords_css__WEBPACK_IMPORTED_MODULE_1___default.a.text,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, children));
-}
-
-/***/ }),
-
-/***/ "./components/featurelist/featurelist.tsx":
-/*!************************************************!*\
-  !*** ./components/featurelist/featurelist.tsx ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FeatureList; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _featurelist_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./featurelist.css */ "./components/featurelist/featurelist.css");
-/* harmony import */ var _featurelist_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_featurelist_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-/* harmony import */ var _paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../paragraph/paragraph */ "./components/paragraph/paragraph.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/featurelist/featurelist.tsx";
-
-
-
-
-
-function Tool(_ref) {
-  var headline = _ref.headline,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    level: 3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, children));
-}
-
-function FeatureList(_ref2) {
-  var data = _ref2.data;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _featurelist_css__WEBPACK_IMPORTED_MODULE_1___default.a.wrapper,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, data.map(function (i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Tool, {
-      key: i.headline,
-      headline: i.headline,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, i.text);
-  }));
-}
 
 /***/ }),
 
@@ -702,116 +502,6 @@ function Link(_ref) {
 
 /***/ }),
 
-/***/ "./components/list/list.tsx":
-/*!**********************************!*\
-  !*** ./components/list/list.tsx ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return List; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _list_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.css */ "./components/list/list.css");
-/* harmony import */ var _list_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_list_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/list/list.tsx";
-
-
-
-function List(_ref) {
-  var headline = _ref.headline,
-      data = _ref.data;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _list_css__WEBPACK_IMPORTED_MODULE_1___default.a.list,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    level: 2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: _list_css__WEBPACK_IMPORTED_MODULE_1___default.a.list,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, data.map(function (item) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      key: item,
-      className: _list_css__WEBPACK_IMPORTED_MODULE_1___default.a.item,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, item);
-  })));
-}
-
-/***/ }),
-
-/***/ "./components/paragraph/paragraph.tsx":
-/*!********************************************!*\
-  !*** ./components/paragraph/paragraph.tsx ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Paragraph; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _paragraph_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./paragraph.css */ "./components/paragraph/paragraph.css");
-/* harmony import */ var _paragraph_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_paragraph_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/paragraph/paragraph.tsx";
-
-
-
-function Paragraph(_ref) {
-  var _ref$children = _ref.children,
-      children = _ref$children === void 0 ? '' : _ref$children,
-      margin = _ref.margin,
-      className = _ref.className;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_paragraph_css__WEBPACK_IMPORTED_MODULE_1___default.a.paragraph, margin && _paragraph_css__WEBPACK_IMPORTED_MODULE_1___default.a.margin, className),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, children.split('\n').map(function (item, key) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-      key: key,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
-    }, item, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }));
-  }));
-}
-
-/***/ }),
-
 /***/ "./components/richtext/richtext.tsx":
 /*!******************************************!*\
   !*** ./components/richtext/richtext.tsx ***!
@@ -846,175 +536,6 @@ function Richtext(_ref) {
     },
     __self: this
   });
-}
-
-/***/ }),
-
-/***/ "./components/spacer/spacer.tsx":
-/*!**************************************!*\
-  !*** ./components/spacer/spacer.tsx ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Spacer; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _spacer_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spacer.css */ "./components/spacer/spacer.css");
-/* harmony import */ var _spacer_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_spacer_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/spacer/spacer.tsx";
-
-
-var SIZE_CLASSES = [_spacer_css__WEBPACK_IMPORTED_MODULE_1___default.a.sizeOne, _spacer_css__WEBPACK_IMPORTED_MODULE_1___default.a.sizeTwo, _spacer_css__WEBPACK_IMPORTED_MODULE_1___default.a.sizeThree, _spacer_css__WEBPACK_IMPORTED_MODULE_1___default.a.sizeFour, _spacer_css__WEBPACK_IMPORTED_MODULE_1___default.a.sizeFive];
-function Spacer(_ref) {
-  var _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 1 : _ref$size;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: SIZE_CLASSES[size],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  });
-}
-
-/***/ }),
-
-/***/ "./components/subline/subline.tsx":
-/*!****************************************!*\
-  !*** ./components/subline/subline.tsx ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Subline; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _subline_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subline.css */ "./components/subline/subline.css");
-/* harmony import */ var _subline_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_subline_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "../node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/subline/subline.tsx";
-
-
-
-function Subline(_ref) {
-  var children = _ref.children,
-      small = _ref.small;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_subline_css__WEBPACK_IMPORTED_MODULE_1___default.a.subline, small && _subline_css__WEBPACK_IMPORTED_MODULE_1___default.a.small),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, children);
-}
-
-/***/ }),
-
-/***/ "./components/team/team.tsx":
-/*!**********************************!*\
-  !*** ./components/team/team.tsx ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Team; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _team_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./team.css */ "./components/team/team.css");
-/* harmony import */ var _team_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_team_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-/* harmony import */ var _paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../paragraph/paragraph */ "./components/paragraph/paragraph.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/team/team.tsx";
-
-
-
-
-
-var TeamMember = function TeamMember(_ref) {
-  var role = _ref.role,
-      img = _ref.img,
-      name = _ref.name,
-      children = _ref.children;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _team_css__WEBPACK_IMPORTED_MODULE_1___default.a.member,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _team_css__WEBPACK_IMPORTED_MODULE_1___default.a.memberImg,
-    style: {
-      backgroundImage: "url(".concat(img)
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    level: 3,
-    className: _team_css__WEBPACK_IMPORTED_MODULE_1___default.a.memberName,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: _team_css__WEBPACK_IMPORTED_MODULE_1___default.a.role,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, role), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_paragraph_paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: _team_css__WEBPACK_IMPORTED_MODULE_1___default.a.memberDescription,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, children)));
-};
-
-function Team(_ref2) {
-  var data = _ref2.data;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _team_css__WEBPACK_IMPORTED_MODULE_1___default.a.team,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, data.map(function (i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TeamMember, {
-      role: i.role,
-      key: i.name,
-      img: "".concat(i.img),
-      name: i.name,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }, i.description);
-  }));
 }
 
 /***/ }),
@@ -5407,21 +4928,21 @@ exports.default = withSideEffect;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx!./":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdatenschutz&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Fdatenschutz.tsx!./":
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdatenschutz&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Fdatenschutz.tsx ***!
+  \***************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/datenschutz", function() {
+      var page = __webpack_require__(/*! ./pages/datenschutz.tsx */ "./pages/datenschutz.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/index.tsx */ "./pages/index.tsx", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/datenschutz.tsx */ "./pages/datenschutz.tsx", function() {
+          if(!next.router.components["/datenschutz"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/datenschutz.tsx */ "./pages/datenschutz.tsx")
+          next.router.update("/datenschutz", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -6236,196 +5757,60 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./pages/index.tsx":
-/*!*************************!*\
-  !*** ./pages/index.tsx ***!
-  \*************************/
+/***/ "./pages/datenschutz.tsx":
+/*!*******************************!*\
+  !*** ./pages/datenschutz.tsx ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Datenschutz; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/api */ "./lib/api.tsx");
-/* harmony import */ var _components_frame_frame__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/frame/frame */ "./components/frame/frame.tsx");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./pages/index.css");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_headline_headline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/headline/headline */ "./components/headline/headline.tsx");
-/* harmony import */ var _components_featurelist_featurelist__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/featurelist/featurelist */ "./components/featurelist/featurelist.tsx");
-/* harmony import */ var _components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/spacer/spacer */ "./components/spacer/spacer.tsx");
-/* harmony import */ var _components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/buttongroup/buttongroup */ "./components/buttongroup/buttongroup.tsx");
-/* harmony import */ var _components_richtext_richtext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/richtext/richtext */ "./components/richtext/richtext.tsx");
-/* harmony import */ var _components_team_team__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/team/team */ "./components/team/team.tsx");
-/* harmony import */ var _components_buzzwords_buzzwords__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/buzzwords/buzzwords */ "./components/buzzwords/buzzwords.tsx");
-/* harmony import */ var _components_subline_subline__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/subline/subline */ "./components/subline/subline.tsx");
-/* harmony import */ var _components_list_list__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/list/list */ "./components/list/list.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/pages/index.tsx";
+/* harmony import */ var _components_headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/headline/headline */ "./components/headline/headline.tsx");
+/* harmony import */ var _components_richtext_richtext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/richtext/richtext */ "./components/richtext/richtext.tsx");
+/* harmony import */ var _components_frame_frame__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/frame/frame */ "./components/frame/frame.tsx");
+/* harmony import */ var _datenschutz_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./datenschutz.css */ "./pages/datenschutz.css");
+/* harmony import */ var _datenschutz_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_datenschutz_css__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/pages/datenschutz.tsx";
 
 
 
 
 
 
-
-
-
-
-
-
-
-var teamData = [{
-  img: '/static/lasse.jpg',
-  role: 'Konzeption',
-  name: 'Lasse Diercks',
-  description: 'Seit 9 Jahren Erfahrung mit der Benutzergerechten gestaltung von Oberflächen. Von UX bis zur technischen Umsetzung.'
-}, {
-  img: '/static/hannes.jpg',
-  role: 'Entwicklung',
-  name: 'Hannes Diercks',
-  description: 'Entwickelt seit 10 Jahren Web basierte Applikationen. Am liebsten in JavaScript und ohne Server. In stabil und mit bedachter Developer Experience.'
-}];
-function Index(p) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_frame_frame__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: p.pageTitle,
-    description: p.pageDescription,
+function Datenschutz(data) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_frame_frame__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    singlePage: true,
+    title: data.pageTitle,
+    description: data.pageDescription,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 18
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.header,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.headerText,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: _datenschutz_css__WEBPACK_IMPORTED_MODULE_5___default.a.datenHeadline,
     level: 1,
-    isRichText: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 19
     },
     __self: this
-  }, p.headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_subline_subline__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, data.pageTitle), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 22
     },
     __self: this
-  }, p.subline)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    data: p.headerbuttons,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.mission,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, p.missionText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    size: 3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 71
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    level: 2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, "Warum Itertativ?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_featurelist_featurelist__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    data: p.whyIterative,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.mission,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74
-    },
-    __self: this
-  }, p.howText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    size: 3,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    level: 2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: this
-  }, "Qualit\xE4ten"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_featurelist_featurelist__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    data: p.tools,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buzzwords_buzzwords__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    headline: "Mehr buzz?",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: this
-  }, p.buzzwords), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    level: 2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
-    },
-    __self: this
-  }, "Team"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_team_team__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    data: teamData,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_list_list__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    headline: "Referenzen",
-    data: p.references,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: this
-  })));
+  }, data.text));
 }
 
-Index.getInitialProps = function () {
-  return Object(_lib_api__WEBPACK_IMPORTED_MODULE_1__["default"])('Startpage');
+Datenschutz.getInitialProps = function () {
+  return Object(_lib_api__WEBPACK_IMPORTED_MODULE_1__["default"])('Datenschutz');
 };
 
 /***/ }),
@@ -6478,14 +5863,14 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 0:
-/*!**************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx ***!
-  \**************************************************************************************************************************************/
+/***/ 17:
+/*!*******************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fdatenschutz&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Fdatenschutz.tsx ***!
+  \*******************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fdatenschutz&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Fdatenschutz.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fdatenschutz&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Fdatenschutz.tsx!./");
 
 
 /***/ }),
@@ -6501,5 +5886,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=index.js.map
+},[[17,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=datenschutz.js.map
