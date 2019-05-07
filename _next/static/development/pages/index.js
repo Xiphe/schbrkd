@@ -468,8 +468,9 @@ function Frame(p) {
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "stylesheet",
+    rel: "preload",
     href: "https://use.typekit.net/uaf4juj.css",
+    as: "style",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -480,7 +481,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 32
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -488,7 +489,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 33
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -496,7 +497,7 @@ function Frame(p) {
     content: p.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -504,7 +505,7 @@ function Frame(p) {
     content: "/static/open-graph.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 35
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -512,7 +513,7 @@ function Frame(p) {
     content: "1200",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 36
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -520,7 +521,7 @@ function Frame(p) {
     content: "630",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -528,7 +529,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].baseUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 38
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -536,7 +537,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 39
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -544,7 +545,7 @@ function Frame(p) {
     content: "photo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 40
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -552,7 +553,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].twitterName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -560,7 +561,7 @@ function Frame(p) {
     content: "750",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 42
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -568,7 +569,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -576,7 +577,7 @@ function Frame(p) {
     content: "560",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -584,7 +585,7 @@ function Frame(p) {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -593,19 +594,19 @@ function Frame(p) {
     alt: "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 47
     },
     __self: this
   })), p.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_footer_footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_background__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 51
     },
     __self: this
   }));
