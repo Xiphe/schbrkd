@@ -1,6 +1,6 @@
 :root {
   --dark: #343637;
-  --font-headline: 'fieldwork', 'arial', sans-serif;
+  --font: 'fieldwork', 'Geneva', sans-serif;
 
   --starry-sky: rgba(36, 38, 43, 1);
   --navy: #083a48;
@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-family: 'fieldwork';
+  font-family: var(--font);
   background-color: white;
   background-size: 100% auto;
   color: var(--dark);
@@ -209,7 +209,7 @@ body {
 .components-headline-headline_headline {
   text-transform: uppercase;
   font-weight: 200;
-  font-family: var(--font-headline);
+  font-family: var(--font);
   line-height: 1;
 
   color: var(--navy);
@@ -341,7 +341,7 @@ body {
   border-radius: 4px;
   color: white;
   text-decoration: none;
-  font-family: var(--font-headline);
+  font-family: var(--font);
   height: 56px;
   padding: 0 36px;
   display: flex;
@@ -413,7 +413,7 @@ body {
   .components-richtext-richtext_richtext h3,
   .components-richtext-richtext_richtext h4,
   .components-richtext-richtext_richtext h5 {
-    font-family: var(--font-headline);
+    font-family: var(--font);
   }
   .components-richtext-richtext_richtext a {
     color: inherit;

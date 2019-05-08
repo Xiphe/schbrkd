@@ -448,41 +448,48 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/frame/fra
 
 
 
+var loaded;
 function Frame(p) {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    if (!loaded) {
+      loaded = true;
+      __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! webfontloader */ "../node_modules/webfontloader/webfontloader.js", 7)).then(function (WebFont) {
+        WebFont.load({
+          typekit: {
+            id: 'uaf4juj'
+          }
+        });
+      }).catch(function (err) {
+        return console.error(err);
+      });
+    }
+  });
   var title = "".concat(p.title, " \uD83D\uDE80 ").concat(_config__WEBPACK_IMPORTED_MODULE_2__["default"].title);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classnames__WEBPACK_IMPORTED_MODULE_4___default()(_frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.frame, p.singlePage && _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.singlePage),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 43
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "stylesheet",
-    href: "https://use.typekit.net/uaf4juj.css",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     rel: "shortcut icon",
     href: "/static/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 44
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -490,7 +497,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 45
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -498,7 +505,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 46
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -506,7 +513,7 @@ function Frame(p) {
     content: p.title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 47
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -514,7 +521,7 @@ function Frame(p) {
     content: "/static/open-graph.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 48
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -522,7 +529,7 @@ function Frame(p) {
     content: "1200",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 49
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -530,7 +537,7 @@ function Frame(p) {
     content: "630",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -538,7 +545,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].baseUrl,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 51
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -546,7 +553,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].title,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 52
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -554,7 +561,7 @@ function Frame(p) {
     content: "photo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 53
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -562,7 +569,7 @@ function Frame(p) {
     content: _config__WEBPACK_IMPORTED_MODULE_2__["default"].twitterName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 54
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -570,7 +577,7 @@ function Frame(p) {
     content: "750",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 55
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -578,7 +585,7 @@ function Frame(p) {
     content: p.description,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 56
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -586,7 +593,7 @@ function Frame(p) {
     content: "560",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 57
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -594,32 +601,32 @@ function Frame(p) {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.logo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_logo__WEBPACK_IMPORTED_MODULE_7__["Logo"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 61
     },
     __self: this
   }))), p.children, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_footer_footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 65
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_background__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 66
     },
     __self: this
   }));
