@@ -149,6 +149,22 @@ body {
   background: var(--orange);
 }
 
+.sections-footer-footer_footer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 200px 0 0 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  justify-content: flex-start;
+}
+
+  @media (min-width: 600px) {
+    .sections-footer-footer_footer {
+      flex-direction: row;
+    }
+  }
+
 .components-headline-headline_headline {
   text-transform: uppercase;
   font-weight: 200;
@@ -226,22 +242,6 @@ body {
   }
 .components-headline-headline_levelFive {
 }
-
-.sections-footer-footer_footer {
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 200px 0 0 0;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
-  justify-content: flex-start;
-}
-
-  @media (min-width: 600px) {
-    .sections-footer-footer_footer {
-      flex-direction: row;
-    }
-  }
 
 .components-link-link_link {
   font-weight: bold;
@@ -414,6 +414,7 @@ body {
   .components-richtext-richtext_richtext h4,
   .components-richtext-richtext_richtext h5 {
     font-family: var(--font);
+    line-height: 1.2;
     color: var(--navy);
   }
   .components-richtext-richtext_richtext a {
@@ -437,6 +438,38 @@ body {
     border-bottom: 4px solid var(--teal);
     text-decoration: none;
   }
+  .components-richtext-richtext_richtext ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .components-richtext-richtext_richtext li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  .components-richtext-richtext_richtext li:after {
+      content: '\2022';
+      font-size: 2em;
+      height: 16px;
+      line-height: 16px;
+      color: var(--teal);
+      position: absolute;
+      display: block;
+      top: 8px;
+      left: 0;
+    }
+
+.pages-datenschutz_datenHeadline {
+  font-size: 50px;
+}
+  @media (max-width: 600px) {
+    .pages-datenschutz_datenHeadline {
+      font-size: 6vw;
+    }
+  }
 
 .components-team-team_team {
   margin-bottom: 80px;
@@ -456,7 +489,7 @@ body {
   }
 
 .components-team-team_role {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 20px;
 }
 
@@ -503,6 +536,7 @@ body {
   font-weight: 300;
   margin-bottom: 36px;
   font-size: 36px;
+  line-height: 40px;
 }
 
   @media (max-width: 520px) {
@@ -514,23 +548,6 @@ body {
 
 .components-subline-subline_small {
   font-size: 28px;
-}
-
-.pages-blog_BlogHeadline {
-  text-transform: none;
-  font-size: 48px;
-}
-
-.pages-blog_BlogRT {
-  font-size: 22px;
-}
-
-.pages-blog_BlogRT p {
-    margin-bottom: 20px;
-  }
-
-.pages-blog_BlogWrap {
-  padding: 48px 0;
 }
 
 .components-list-list_list {

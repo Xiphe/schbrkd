@@ -6380,9 +6380,9 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/pages/index.tsx";
 
 var teamData = [{
   img: '/static/lasse.jpg',
-  role: 'Konzeption',
+  role: 'Design',
   name: 'Lasse Diercks',
-  description: 'Seit 9 Jahren Erfahrung mit der Benutzergerechten gestaltung von Oberflächen. Von UX bis zur technischen Umsetzung.'
+  description: 'Seit 9 Jahren Erfahrung mit der benutzergerechten Gestaltung von Oberflächen. Von UX bis zur technischen Umsetzung.'
 }, {
   img: '/static/hannes.jpg',
   role: 'Entwicklung',
@@ -6581,7 +6581,7 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 8:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx ***!
   \**************************************************************************************************************************************/
@@ -6604,5 +6604,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
