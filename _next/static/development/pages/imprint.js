@@ -392,7 +392,7 @@ function Frame(p) {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "twitter:image",
-    content: "/static/open-graph.png",
+    content: "https://schubrake.de/static/open-graph.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
