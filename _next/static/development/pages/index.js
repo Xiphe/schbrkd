@@ -83,15 +83,17 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/button/bu
 
 
 function Button(_ref) {
-  var secondary = _ref.secondary,
+  var className = _ref.className,
+      secondary = _ref.secondary,
       children = _ref.children,
       href = _ref.href;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  var Element = href ? 'a' : 'button';
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Element, {
     href: href,
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_button_css__WEBPACK_IMPORTED_MODULE_1___default.a.button, secondary && _button_css__WEBPACK_IMPORTED_MODULE_1___default.a.secondary),
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, _button_css__WEBPACK_IMPORTED_MODULE_1___default.a.button, secondary && _button_css__WEBPACK_IMPORTED_MODULE_1___default.a.secondary),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 21
     },
     __self: this
   }, children);
@@ -138,63 +140,6 @@ function ButtonGroup(_ref) {
       },
       __self: this
     }, i.label);
-  }));
-}
-
-/***/ }),
-
-/***/ "./components/contactaction/contactaction.tsx":
-/*!****************************************************!*\
-  !*** ./components/contactaction/contactaction.tsx ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ContactAction; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-/* harmony import */ var _buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../buttongroup/buttongroup */ "./components/buttongroup/buttongroup.tsx");
-/* harmony import */ var _contactaction_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contactaction.css */ "./components/contactaction/contactaction.css");
-/* harmony import */ var _contactaction_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_contactaction_css__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/contactaction/contactaction.tsx";
-
-
-
-
-var buttons = [{
-  label: 'Anrufen',
-  href: 'tel:004915734376122'
-}, {
-  label: 'Anschreiben',
-  href: 'mailto:contact@schubrake.de',
-  secondary: true
-}];
-function ContactAction(_ref) {
-  var headline = _ref.headline;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _contactaction_css__WEBPACK_IMPORTED_MODULE_3___default.a.wrapper,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    className: _contactaction_css__WEBPACK_IMPORTED_MODULE_3___default.a.headline,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, headline ? headline : 'Habt ihr eine Idee die wir mal besprechen sollten?'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    data: buttons,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
   }));
 }
 
@@ -536,16 +481,16 @@ function Frame(p) {
       lineNumber: 43
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.logoContainer,
-    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.logo,
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
@@ -662,64 +607,6 @@ function Link(_ref) {
 
 /***/ }),
 
-/***/ "./components/list/list.tsx":
-/*!**********************************!*\
-  !*** ./components/list/list.tsx ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return List; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _list_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.css */ "./components/list/list.css");
-/* harmony import */ var _list_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_list_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _headline_headline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../headline/headline */ "./components/headline/headline.tsx");
-var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/list/list.tsx";
-
-
-
-function List(_ref) {
-  var headline = _ref.headline,
-      data = _ref.data;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _list_css__WEBPACK_IMPORTED_MODULE_1___default.a.list,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headline_headline__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    level: 2,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: _list_css__WEBPACK_IMPORTED_MODULE_1___default.a.list,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, data.map(function (item) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      key: item,
-      className: _list_css__WEBPACK_IMPORTED_MODULE_1___default.a.item,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, item);
-  })));
-}
-
-/***/ }),
-
 /***/ "./components/logo.tsx":
 /*!*****************************!*\
   !*** ./components/logo.tsx ***!
@@ -806,6 +693,68 @@ var Logo = function Logo() {
     __self: this
   })));
 };
+
+/***/ }),
+
+/***/ "./components/logos/logos.tsx":
+/*!************************************!*\
+  !*** ./components/logos/logos.tsx ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Logos; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _logos_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logos.css */ "./components/logos/logos.css");
+/* harmony import */ var _logos_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_logos_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/logos/logos.tsx";
+
+
+function Logos() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _logos_css__WEBPACK_IMPORTED_MODULE_1___default.a.logos,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/jimdo-logo.png",
+    alt: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/cellular-logo.png",
+    alt: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/sumcumo-logo.png",
+    alt: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/xing-logo.png",
+    alt: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }));
+}
 
 /***/ }),
 
@@ -6289,11 +6238,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************!*\
   !*** ./pages/index.tsx ***!
   \*************************/
-/*! exports provided: default */
+/*! exports provided: teamData, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "teamData", function() { return teamData; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -6303,14 +6253,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_headline_headline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/headline/headline */ "./components/headline/headline.tsx");
 /* harmony import */ var _components_spacer_spacer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/spacer/spacer */ "./components/spacer/spacer.tsx");
-/* harmony import */ var _components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/buttongroup/buttongroup */ "./components/buttongroup/buttongroup.tsx");
-/* harmony import */ var _components_richtext_richtext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/richtext/richtext */ "./components/richtext/richtext.tsx");
-/* harmony import */ var _components_team_team__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/team/team */ "./components/team/team.tsx");
-/* harmony import */ var _components_contactaction_contactaction__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/contactaction/contactaction */ "./components/contactaction/contactaction.tsx");
+/* harmony import */ var _components_richtext_richtext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/richtext/richtext */ "./components/richtext/richtext.tsx");
+/* harmony import */ var _components_team_team__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/team/team */ "./components/team/team.tsx");
+/* harmony import */ var _components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/buttongroup/buttongroup */ "./components/buttongroup/buttongroup.tsx");
+/* harmony import */ var _components_logos_logos__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/logos/logos */ "./components/logos/logos.tsx");
 /* harmony import */ var _components_subline_subline__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/subline/subline */ "./components/subline/subline.tsx");
-/* harmony import */ var _components_list_list__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/list/list */ "./components/list/list.tsx");
 var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/pages/index.tsx";
-
 
 
 
@@ -6339,91 +6287,155 @@ function Index(p) {
     description: p.pageDescription,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.header,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.headerText,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.headerHeadline,
     level: 1,
     isRichText: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 61
     },
     __self: this
   }, p.headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_subline_subline__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 64
     },
     __self: this
-  }, p.subline)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, p.pageDescription)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
     data: p.headerbuttons,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 66
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_logos_logos__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.mission,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 69
     },
     __self: this
   }, p.missionText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 70
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_contactaction_contactaction__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    headline: "Habt ihr eine Idee, die wir zum Leben erwecken sollen?",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 72
+    },
+    __self: this
+  }, "Entwicklungs Sprint"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, p.developementSprint), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    data: p.sprintCta,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: 3,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, "Hands On Hilfe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_richtext_richtext__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, p.handsOnText), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: 2,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_buttongroup_buttongroup__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    data: p.handsOnCta,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_5__["default"], {
     size: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 81
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_team_team__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headline_headline__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }, "Team"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_spacer_spacer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    size: 1,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_team_team__WEBPACK_IMPORTED_MODULE_7__["default"], {
     data: teamData,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_list_list__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    headline: "Referenzen",
-    data: p.references,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 84
     },
     __self: this
   })));
@@ -6483,7 +6495,7 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 8:
+/***/ 0:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Findex.tsx ***!
   \**************************************************************************************************************************************/
@@ -6506,5 +6518,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

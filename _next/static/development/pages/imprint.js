@@ -398,16 +398,16 @@ function Frame(p) {
       lineNumber: 43
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.logoContainer,
-    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 48
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: _frame_css__WEBPACK_IMPORTED_MODULE_1___default.a.logo,
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 49
@@ -5997,7 +5997,7 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ 19:
+/***/ 12:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fimprint&absolutePagePath=%2FUsers%2Flasse%2Fcheckouts%2Fschubrake.de%2Fweb%2Fpages%2Fimprint.tsx ***!
   \***********************************************************************************************************************************************/
@@ -6020,5 +6020,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[19,"static/runtime/webpack.js","styles"]]]);
+},[[12,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=imprint.js.map
