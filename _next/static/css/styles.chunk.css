@@ -408,13 +408,13 @@ strong {
   }
   .components-richtext-richtext_richtext li:after {
       content: '\2022';
-      font-size: 2em;
+      font-size: 1em;
       height: 16px;
       line-height: 16px;
       color: var(--teal);
       position: absolute;
       display: block;
-      top: 8px;
+      top: 0.6ex;
       left: 0;
     }
 

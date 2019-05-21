@@ -296,7 +296,7 @@ module.exports = {"richtext":"components-richtext-richtext_richtext"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1558451174626");
+            injectCss(link, link.href.split("?")[0] + "?unix=1558451474529");
           });
       }
     }
