@@ -334,7 +334,6 @@ strong {
 }
   .components-richtext-richtext_richtext p {
     font-family: var(--font);
-    font-size: 22px;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 60px;
@@ -436,12 +435,12 @@ strong {
   }
 
 .components-team-team_role {
-  font-weight: 300;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 26px;
 }
 
 .components-team-team_memberName {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
 }
 
@@ -563,6 +562,15 @@ strong {
 .components-subline-subline_small {
   font-size: 28px;
 }
+
+.pages-datenschutz_datenHeadline {
+  font-size: 50px;
+}
+  @media (max-width: 600px) {
+    .pages-datenschutz_datenHeadline {
+      font-size: 6vw;
+    }
+  }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
