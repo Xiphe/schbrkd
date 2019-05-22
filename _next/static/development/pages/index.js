@@ -6272,12 +6272,12 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/pages/index.tsx";
 
 
 var teamData = [{
-  img: '/static/lasse.jpg',
+  img: '/static/Lasse.png',
   role: 'Design',
   name: 'Lasse Diercks',
   description: 'Seit 9 Jahren Erfahrung mit der benutzergerechten Gestaltung von Oberflächen. Von UX bis zur technischen Umsetzung.'
 }, {
-  img: '/static/hannes.jpg',
+  img: '/static/Hannes.png',
   role: 'Entwicklung',
   name: 'Hannes Diercks',
   description: 'Entwickelt seit 10 Jahren Web basierte Applikationen. Am liebsten in JavaScript und ohne Server. In stabil und mit bedachter Developer Experience.'
