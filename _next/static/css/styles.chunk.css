@@ -176,61 +176,6 @@ strong {
     }
   }
 
-.components-link-link_link {
-  font-weight: bold;
-  color: var(--navy);
-  border-bottom: 4px solid var(--teal);
-  text-decoration: none;
-}
-  .components-link-link_link:focus {
-    border-color: var(--orange);
-  }
-
-.pages-index_header {
-  text-align: center;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 80px;
-}
-  @media (min-width: 520px) {
-    .pages-index_header {
-      height: auto;
-    }
-  }
-
-.pages-index_headerText {
-  margin-bottom: 36px;
-}
-
-.pages-index_headerHeadline {
-  font-weight: 600 !important;
-}
-
-.pages-index_team {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-}
-
-.pages-index_mission {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 32px;
-}
-
-@media (--small-screen) {
-    .pages-index_mission {
-      font-size: 24px;
-    }
-  }
-.pages-index_teamPicture {
-  width: 100%;
-}
-
 .components-headline-headline_headline {
   font-weight: 200;
   font-family: var(--font-headline);
@@ -304,6 +249,65 @@ strong {
     text-shadow: initial;
   }
 .components-headline-headline_levelFive {
+}
+
+.components-link-link_link {
+  font-weight: bold;
+  color: var(--navy);
+  border-bottom: 4px solid var(--teal);
+  text-decoration: none;
+}
+  .components-link-link_link:focus {
+    border-color: var(--orange);
+  }
+
+.pages-index_header {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+  @media (min-width: 520px) {
+    .pages-index_header {
+      height: auto;
+    }
+  }
+
+.pages-index_headerText {
+  margin-bottom: 36px;
+}
+
+.pages-index_headerHeadline {
+  font-weight: 600 !important;
+}
+
+.pages-index_team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.pages-index_subline {
+  padding: 0 50px;
+}
+
+.pages-index_mission {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+}
+
+@media (--small-screen) {
+    .pages-index_mission {
+      font-size: 24px;
+    }
+  }
+.pages-index_teamPicture {
+  width: 100%;
 }
 
 .components-spacer-spacer_spacer {
@@ -549,7 +553,7 @@ strong {
   font-weight: 400;
   margin-bottom: 36px;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
   @media (max-width: 520px) {
@@ -562,15 +566,6 @@ strong {
 .components-subline-subline_small {
   font-size: 28px;
 }
-
-.pages-datenschutz_datenHeadline {
-  font-size: 50px;
-}
-  @media (max-width: 600px) {
-    .pages-datenschutz_datenHeadline {
-      font-size: 6vw;
-    }
-  }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

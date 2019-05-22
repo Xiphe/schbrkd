@@ -902,13 +902,14 @@ var _jsxFileName = "/Users/lasse/checkouts/schubrake.de/web/components/subline/s
 
 
 function Subline(_ref) {
-  var children = _ref.children,
+  var className = _ref.className,
+      children = _ref.children,
       small = _ref.small;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_subline_css__WEBPACK_IMPORTED_MODULE_1___default.a.subline, small && _subline_css__WEBPACK_IMPORTED_MODULE_1___default.a.small),
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, _subline_css__WEBPACK_IMPORTED_MODULE_1___default.a.subline, small && _subline_css__WEBPACK_IMPORTED_MODULE_1___default.a.small),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, children);
@@ -6320,6 +6321,7 @@ function Index(p) {
     },
     __self: this
   }, p.headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_subline_subline__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.subline,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
