@@ -361,25 +361,6 @@ strong {
       left: 0;
     }
 
-._2b8yc {
-  display: inline-block;
-  font-weight: 400;
-  margin-bottom: 36px;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-  @media (max-width: 520px) {
-    ._2b8yc,
-    ._2b8yc._2xy4B {
-      font-size: 20px;
-    }
-  }
-
-._2xy4B {
-  font-size: 28px;
-}
-
 ._1MJye {
   display: grid;
   grid-auto-columns: auto;
@@ -433,4 +414,23 @@ strong {
     box-shadow: 8px 8px 0 0 rgba(131, 152, 153, 0.12),
       4px 4px 0 0 rgba(214, 225, 235, 0.56);
   }
+
+._2b8yc {
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 36px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+  @media (max-width: 520px) {
+    ._2b8yc,
+    ._2b8yc._2xy4B {
+      font-size: 20px;
+    }
+  }
+
+._2xy4B {
+  font-size: 28px;
+}
 
